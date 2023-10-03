@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="olvidate.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Oxanium:wght@200&display=swap" rel="stylesheet">
+<html>
+<head>
+    <title>¿Olvidaste Algo? | BranDev</title>
+    <style>
+    /* Estilos (los mismos que tienes) */
+    </style>
+</head>
+<body>
+    <div id="TODO">
+    <h1>¿Qué deberías completar?</h1>
+    <h2>Total de tareas completadas: <span id="contador">0</span></h2>
+
+    <!-- Formulario para agregar datos -->
+    <form>
+        <label for="nombre">¿Qué es?</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellido">¿A qué hora y día lo realizarás?</label>
+        <input type="text" id="apellido" name="apellido">
+
+        <label for="email">¿Plazo máximo para completarlo?</label>
+        <input type="email" id="email" name="email">
+
+        <button type="button" onclick="agregarDatos()">Agregar</button>
+    </form>
+
+    <!-- Tabla para mostrar los datos -->
+    <table id="tablaDatos">
+        <thead>
+            <tr>
+                <th>¿Qué es?</th>
+                <th>¿A qué hora y día lo realizarás?</th>
+                <th>¿Plazo máximo para completarlo?</th>
+                <th>¿Lo Completaste?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se insertarán los datos -->
+        </tbody>
+    </table>
+    </div>
+    <script src="olvidate.js">
+    </script>
+</body>
+</html>
